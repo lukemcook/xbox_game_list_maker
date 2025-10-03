@@ -16,4 +16,5 @@ After running "game_list.txt" will be created and appear in the directory contai
 
 # Todo
 Portable version (Windows)
+
 Web version
