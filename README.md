@@ -10,7 +10,7 @@ Place "gamelist_xbox.csv", "gamelist_xbox360.csv" and "xbox_content_id_checker.p
 
 While in the same directory open a Terminal/Command Prompt/Powershell and run "python xbox_content_id_checker.py".
 
-After running you "game_list.txt" will be created and appear in the directory containing a list of your games.
+After running "game_list.txt" will be created and appear in the directory containing a list of your games.
 
 <img width="526" height="114" alt="image" src="https://github.com/user-attachments/assets/2ab75f6a-158d-4998-af2a-5ec912d2cb93" />
 
