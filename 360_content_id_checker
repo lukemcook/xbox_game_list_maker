@@ -18,17 +18,24 @@ if len(content_folders) == 0:
     print("No Xbox content IDs found. Exiting...")
     exit()
 
-# Search Xbox 360 content IDs for matching games
+# Use a set to track unique title names to avoid duplicates
+unique_titles = set()
 matches = []
+
+# Search Xbox 360 content IDs for matching games
 with open("gamelist_xbox360.csv", 'r', encoding='utf-8') as csvfile:
     reader = csv.DictReader(csvfile, delimiter='\t')
     
     for row in reader:
         if row['title_id'] in content_folders:
-            matches.append({
-                'title_id': row['title_id'],
-                'title_name': row['title_name']
-            })
+            title_name = row['title_name']
+            # Only add if we haven't seen this title name before
+            if title_name not in unique_titles:
+                unique_titles.add(title_name)
+                matches.append({
+                    'title_id': row['title_id'],
+                    'title_name': title_name
+                })
 
 # Search Xbox content IDs for matching games
 with open("gamelist_xbox.csv", 'r', encoding='utf-8') as csvfile:
@@ -36,10 +43,14 @@ with open("gamelist_xbox.csv", 'r', encoding='utf-8') as csvfile:
     
     for row in reader:
         if row['title_id'] in content_folders:
-            matches.append({
-                'title_id': row['title_id'],
-                'title_name': row['title_name']
-            })
+            title_name = row['title_name']
+            # Only add if we haven't seen this title name before
+            if title_name not in unique_titles:
+                unique_titles.add(title_name)
+                matches.append({
+                    'title_id': row['title_id'],
+                    'title_name': title_name
+                })
 
 # Display results and write to file
 if matches:
