@@ -15,4 +15,5 @@ After running "game_list.txt" will be created and appear in the directory contai
 <img width="518" height="91" alt="image" src="https://github.com/user-attachments/assets/cfbe3d13-a6cb-4024-8140-c7ba6a288881" />
 
 # Todo
-Portable version
+Portable version (Windows)
+Web version
