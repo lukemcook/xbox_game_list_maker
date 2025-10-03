@@ -2,7 +2,7 @@
 
 This app is for reading Xbox and Xbox 360 content IDs. It creates a text file telling you exactly what games you have in your folders which can be useful if you only have the IDs.
 
-Usage:
+# Usage:
 
 Place "gamelist_xbox.csv", "gamelist_xbox360.csv" and "360_content_id_checker.py" inside the same folder as your Xbox or Xbox 360 content ID folders. 
 
