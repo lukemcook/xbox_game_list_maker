@@ -12,7 +12,7 @@ While in the same directory open a Terminal/Command Prompt/Powershell and run "p
 
 After running "game_list.txt" will be created and appear in the directory containing a list of your games.
 
-<img width="526" height="114" alt="image" src="https://github.com/user-attachments/assets/2ab75f6a-158d-4998-af2a-5ec912d2cb93" />
+<img width="518" height="91" alt="image" src="https://github.com/user-attachments/assets/cfbe3d13-a6cb-4024-8140-c7ba6a288881" />
 
 # Todo
 Portable version
